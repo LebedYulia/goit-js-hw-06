@@ -4,8 +4,9 @@ const bodyRef = document.querySelector('body');
 
 
 btnChangeColor.addEventListener('click', () => {
-  bodyRef.style.background = getRandomHexColor();
-  hexColorValue.textContent = bodyRef.style.background;  
+  const colorVar =  getRandomHexColor();
+  bodyRef.style.background = colorVar;
+  hexColorValue.textContent = colorVar;  
 })  
 
 function getRandomHexColor() {
